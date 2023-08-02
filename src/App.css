@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #323a3f;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #111b21;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #111b21;
 }
 
-.App-link {
-  color: #61dafb;
+/* WRAPPER */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  height: 820px;
+  background-color: #222e35;
+  border-radius: 12px;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* CHAT */
+.chat-container {
+  min-width: 700px;
+  height: 700px;
+  border-radius: 12px;
+  overflow: scroll;
+  overflow-x: hidden;
 }
+
+.message {
+  font-size: 19px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #42cba5;
+  color: #fff;
+  margin-bottom: 4px;
+  max-width: 400px;
+}
+
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: relative;
+}
+
+.send-messages {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.messages-input {
+  padding: 12px;
+  width: 575px;
+  border-radius: 50px;
+  margin-left: 5px;
+  outline: none;
+  border: none;
+}
+
+.messages-button {
+  cursor: pointer;
+  width: 90px;
+  padding: 12px;
+  background-color: #42cba5;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  margin-left: 15px;
+}
+
+.messages-button:hover {
+  background-color: #35b691;
+}
+
+.icon {
+  font-size: 18px;
+  color: #fff;
+}
+
+/* .time {
+  font-size: 12px;
+  text-align: end;
+  color: rgb(230, 229, 229);
+} */
