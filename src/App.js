@@ -1,10 +1,10 @@
 import './App.css';
-import Wrapper from './components/Wrapper';
+import Chat from './components/Chat';
 
 function App() {
   return (
     <div className="App">
-      <Wrapper />
+      <Chat />
 
     </div>
   );

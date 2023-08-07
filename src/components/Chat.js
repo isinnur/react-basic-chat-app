@@ -11,7 +11,7 @@ const Chat = () => {
 
 
     return (
-        <div>
+        <div className='container'>
             <div className='chat-container'>
                 <Messages messages={messages} />
                 <Input addMessage={addMessage} />
